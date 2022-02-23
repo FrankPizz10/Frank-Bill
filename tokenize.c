@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include "tokenize.h"
 
 const int MAX_NUM_CHARS = 255;
 
@@ -97,7 +98,7 @@ char **tokenize(char *str)
   return outer;
 }
 
-int main()
+int main1()
 {
   char buf[MAX_NUM_CHARS];
   read(0, buf, MAX_NUM_CHARS);
